@@ -2,8 +2,12 @@ package com.simpragma.primenumber;
 
 public class PrimeNum {
 	public static void main(String[] args) {
-		
-		Integer num = Integer.valueOf(args[0]);
+		Integer num = new Integer(0);
+		try {
+			num = Integer.valueOf(args[0]);
+		} catch (Exception e) {
+			
+		}
 		
 		if (num < 1) {
 			System.out.println("Not a natural number");
