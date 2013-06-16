@@ -1,8 +1,7 @@
-package test;
+package test.java;
 
 import static org.junit.Assert.*;
-
-import main.com.simpragma.primenumber.PrimeNum;
+import main.java.com.simpragma.primenumber.PrimeNum;
 
 import org.junit.Test;
 
@@ -13,7 +12,7 @@ public class TestPrime {
 		
 //		fail("Not yet implemented");
 		PrimeNum tester = new PrimeNum();
-//		assertFalse("Assertion failed", tester.isItPrime(7));
+//		assertFalse("Assertion failed here....", tester.isItPrime(8));
 	}
 
 }

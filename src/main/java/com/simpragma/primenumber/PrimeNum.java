@@ -1,4 +1,4 @@
-package main.com.simpragma.primenumber;
+package main.java.com.simpragma.primenumber;
 
 public class PrimeNum {
 	public Boolean isItPrime(Integer num) {
