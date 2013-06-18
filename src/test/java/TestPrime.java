@@ -1,7 +1,11 @@
 package test.java;
 
-import static org.junit.Assert.*;
+import org.junit.Assert;
+
+import java.util.List;
+
 import main.java.com.simpragma.primenumber.PrimeNum;
+import static org.mockito.Mockito.*;
 
 import org.junit.Test;
 
@@ -9,10 +13,13 @@ public class TestPrime {
 
 	@Test
 	public void test() {
+		PrimeNum systemUnderTest = mock(PrimeNum.class);
+		PrimeNum pn = new PrimeNum();
+		stub(systemUnderTest.isItPrime(5)).toReturn(true);
+		Boolean ret = systemUnderTest.isItPrime(5);
+		Assert.assertEquals(true, ret);
+		verify(systemUnderTest).isItPrime(5);
 		
-//		fail("Not yet implemented");
-		PrimeNum tester = new PrimeNum();
-//		assertFalse("Assertion failed here....", tester.isItPrime(8));
 	}
 
 }

@@ -18,6 +18,11 @@
       <artifactId>guava</artifactId>
       <version>14.0.1</version>
    </dependency>
+   <dependency>
+	<groupId>org.mockito</groupId>
+	<artifactId>mockito-all</artifactId>
+	<version>1.9.5</version>
+</dependency>
   </dependencies>
   <build>
 	<finalName>${project.artifactId}</finalName>
@@ -35,6 +40,15 @@
             </goals>
             <configuration>
               <artifactItems>
+                <artifactItem>
+				  <groupId>org.mockito</groupId>
+				  <artifactId>mockito-all</artifactId>
+				  <version>1.9.5</version>
+                  <type>jar</type>
+                  <overWrite>false</overWrite>
+                  <outputDirectory>${project.build.directory}/lib</outputDirectory>
+                  <destFileName>mockito-all-1.9.5.jar</destFileName>
+                </artifactItem>
                 <artifactItem>
 			      <groupId>com.google.guava</groupId>
 			      <artifactId>guava</artifactId>
