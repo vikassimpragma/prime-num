@@ -41,7 +41,7 @@
 			      <version>14.0.1</version>
                   <type>jar</type>
                   <overWrite>false</overWrite>
-                  <outputDirectory>${project.build.directory}</outputDirectory>
+                  <outputDirectory>${project.build.directory}/lib</outputDirectory>
                   <destFileName>guava-14.0.1.jar</destFileName>
                 </artifactItem>
               </artifactItems>
